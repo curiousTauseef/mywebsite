@@ -28,6 +28,6 @@ app.get('/lotr', function(req,res){
 
 var server = app.listen(8080, function(){
     
-    console.log("novice"); 
+    console.log("listening on port 8080"); 
     
 }); 

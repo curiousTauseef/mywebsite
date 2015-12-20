@@ -1,6 +1,8 @@
 var express = require('express'); 
 var app = express(); 
 
+app.set('port', (process.env.PORT || 5000));
+
 app.set('view engine', 'ejs');//setting the ejs engine
 //app.set('views' + __dirname + '/views'); 
 
@@ -26,8 +28,7 @@ app.get('/lotr', function(req,res){
 }); 
 
 
-var server = app.listen(8080, function(){
-    
-    console.log("listening on port 8080"); 
-    
-}); 
+var server = app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
+

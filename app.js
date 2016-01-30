@@ -23,12 +23,15 @@ app.get('/blogs/writing', function(req,res){
     
    // var id = req.params.id; var title = req.params.title;  res.send("Marjuk" + id + title); 
        res.render("partials/blogs/writing"); 
-
    
-   
-    
 }); 
 
+app.get('/blogs/comics', function(req,res){
+    
+   // var id = req.params.id; var title = req.params.title;  res.send("Marjuk" + id + title); 
+       res.render("partials/blogs/comics"); 
+   
+}); 
 
 var server = app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));

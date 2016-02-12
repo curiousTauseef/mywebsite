@@ -39,7 +39,7 @@ app.get('/blogs/comics', function(req,res){
        res.render("partials/blogs/comics"); 
    
 }); 
-app.get('/blogs/comics', function(req,res){
+app.get('/blogs/ratio', function(req,res){
     
    // var id = req.params.id; var title = req.params.title;  res.send("Marjuk" + id + title); 
        res.render("partials/blogs/ratio"); 

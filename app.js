@@ -26,6 +26,12 @@ app.get('/blogs/writing', function(req,res){
    
 }); 
 
+app.get('/blogs/experience', function(req,res){
+    
+   // var id = req.params.id; var title = req.params.title;  res.send("Marjuk" + id + title); 
+       res.render("partials/blogs/experience"); 
+   
+}); 
 app.get('/blogs/classics', function(req,res){
     
    // var id = req.params.id; var title = req.params.title;  res.send("Marjuk" + id + title); 
